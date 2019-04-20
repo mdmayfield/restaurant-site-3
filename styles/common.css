@@ -2,8 +2,9 @@ h1 {
   text-align: center;
 }
 
-p.menu {
+td {
   text-align: center;
+  padding: 10px;
 }
 
 p.links {
