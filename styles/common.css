@@ -37,9 +37,14 @@ label.first {
 
 textarea {
   vertical-align: top;
-  width: 300px;
+  width: 340px;
 }
 
 #name, #email, #phone, #reason {
-  width: 300px;
+  width: 340px;
 }
+
+#submit {
+  margin-left: 350px;
+}
+
