@@ -29,3 +29,17 @@ footer {
   text-align: center;
 }
 
+label.first {
+  display: inline-block;
+  text-align: right;
+  width: 340px;
+}
+
+textarea {
+  vertical-align: top;
+  width: 300px;
+}
+
+#name, #email, #phone, #reason {
+  width: 300px;
+}
