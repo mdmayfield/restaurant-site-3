@@ -19,3 +19,7 @@ article {
 footer {
   text-align: center;
 }
+
+header, footer, nav {
+  background: white;
+}
