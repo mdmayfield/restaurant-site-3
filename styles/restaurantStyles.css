@@ -2,12 +2,6 @@ h1 {
   text-align: center;
 }
 
-td {
-  text-align: center;
-  vertical-align: top;
-  padding: 10px;
-}
-
 p.links {
   text-align: left;
 }
@@ -22,23 +16,3 @@ article {
 footer {
   text-align: center;
 }
-
-label.first {
-  display: inline-block;
-  text-align: right;
-  width: 340px;
-}
-
-textarea {
-  vertical-align: top;
-  width: 340px;
-}
-
-#name, #email, #phone, #reason {
-  width: 340px;
-}
-
-#submit {
-  margin-left: 350px;
-}
-
