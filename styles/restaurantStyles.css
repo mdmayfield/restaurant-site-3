@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 h1 {
   text-align: center;
+  font-family: Pacifico,cursive;
 }
 
 p.links {
