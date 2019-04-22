@@ -26,6 +26,10 @@ Created: 2019-04-20
       #submit {
         margin-left: 350px;
       }
+
+      label.required {
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
@@ -43,11 +47,11 @@ Created: 2019-04-20
     </nav>
 
     <form action="submit.html" method="POST">
-      <label for="name" class="first">Name:</label>
-      <input type="text" id="name" name="name"><br />
+      <label for="name" class="first required">Name:</label>
+      <input type="text" id="name" name="name" required><br />
 
-      <label for="email" class="first">Email:</label>
-      <input type="text" id="email" name="email"><br />
+      <label for="email" class="first required">Email:</label>
+      <input type="text" id="email" name="email" required><br />
 
       <label for="phone" class="first">Phone:</label>
       <input type="text" id="phone" name="phone"><br />
