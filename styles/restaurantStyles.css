@@ -24,7 +24,7 @@ header, footer, nav {
   background: white;
 }
 
-nav a:visited {
+/*nav a:visited {
   color: #586282;
 }
 
@@ -34,4 +34,4 @@ nav a:hover {
 
 nav a:active {
   text-decoration: none;
-}
+}*/
