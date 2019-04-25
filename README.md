@@ -1,4 +1,4 @@
-# restaurant-site-2
-GitHub Pages repo for 2nd restaurant site assignment
+# restaurant-site-3
+GitHub Pages repo for 3rd restaurant site assignment
 
-https://mdmayfield.github.io/restaurant-site-2/
+https://mdmayfield.github.io/restaurant-site-3/
