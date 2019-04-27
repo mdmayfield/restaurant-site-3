@@ -103,23 +103,27 @@ Created: 2019-04-25
         </div>
       </div>
 
-      <label for="haveYouBeen" class="first">Have you been to the restaurant?</label>
-      <input type="radio" id="choice1" name="choice1" value="no" checked>
-      <label for="choice1">No</label>
-      <input type="radio" id="choice2" name="choice2" value="yes">
-      <label for="choice2">Yes</label><br />
+      <div class="form-check row">
+        <label for="haveYouBeen" class="col-sm-2 form-check-label text-right">Have you been to the restaurant?</label>
+        <input type="radio" id="choice1" name="haveYouBeen" value="yes">
+        <label for="choice1">Yes</label>
+        <input type="radio" id="choice2" name="haveYouBeen" value="no" checked>
+        <label for="choice2">No</label><br />
+      </div>
 
-      <label for="contact" class="first">Best days to contact you:</label>
-      <input type="checkbox" id="monday" name="contact" value="monday">
-      <label for="monday">M </label>
-      <input type="checkbox" id="tuesday" name="contact" value="tuesday">
-      <label for="tuesday">T </label>
-      <input type="checkbox" id="wednesday" name="contact" value="wednesday">
-      <label for="wednesday">W </label>
-      <input type="checkbox" id="thursday" name="contact" value="thursday">
-      <label for="thursday">Th </label>
-      <input type="checkbox" id="friday" name="contact" value="friday">
-      <label for="friday">F </label><br />
+      <div class="form-check row">
+        <label for="contact" class="col-sm-2 form-check-label text-right">Best days to contact you:</label>
+        <input type="checkbox" id="monday" name="contact" value="monday">
+        <label for="monday">M </label>
+        <input type="checkbox" id="tuesday" name="contact" value="tuesday">
+        <label for="tuesday">T </label>
+        <input type="checkbox" id="wednesday" name="contact" value="wednesday">
+        <label for="wednesday">W </label>
+        <input type="checkbox" id="thursday" name="contact" value="thursday">
+        <label for="thursday">Th </label>
+        <input type="checkbox" id="friday" name="contact" value="friday">
+        <label for="friday">F </label><br />
+      </div>
 
       <input type="submit" name="submit" id="submit" value="Send Request">
     </form>
