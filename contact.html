@@ -60,30 +60,48 @@ Created: 2019-04-25
       </ul>
     </nav>
 
+    <br />
+
     <form><!--TODO: figure out validation message-->
-      <div class="form-group">
-        <label for="name" class="first required">Name:</label>
-        <input type="text" id="name" name="name" required><br />
+      <div class="form-group row">
+        <label for="name" class="first required col-sm-2 col-form-label text-right">Name:</label>
+        <div class="col-sm-10">
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
       </div>
 
-      <label for="email" class="first required">Email:</label>
-      <input type="text" id="email" name="email" required><br />
+      <div class="form-group row">
+        <label for="email" class="required col-sm-2 col-form-label text-right">Email:</label>
+        <div class="col-sm-10">        
+          <input type="text" id="email" name="email" class="form-control" required>
+        </div>
+      </div>
 
-      <label for="phone" class="first">Phone:</label>
-      <input type="text" id="phone" name="phone"><br />
+      <div class="form-group row">
+        <label for="phone" class="col-sm-2 col-form-label text-right">Phone:</label>
+        <div class="col-sm-10">
+          <input type="text" id="phone" name="phone" class="form-control">
+        </div>
+      </div>
 
-      <label for="reason" class="first">Reason for Inquiry:</label>
-      <select id="reason" name="reason">
-        <option value="catering" selected>Catering</option>
-        <option value="privateParty">Private Party</option>
-        <option value="feedback">Feedback</option>
-        <option value="other">Other</option>
-      </select><br />
+      <div class="form-group row">
+        <label for="reason" class="col-sm-2 col-form-label text-right">Reason for Inquiry:</label>
+        <div class="col-sm-10">
+          <select id="reason" name="reason" class="form-control">
+            <option value="catering" selected>Catering</option>
+            <option value="privateParty">Private Party</option>
+            <option value="feedback">Feedback</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
 
-      <div class="textarea">
-        <label for="info" class="first">Additional Information:</label>
-        <textarea id="info" name="info"></textarea>
-      </div><br />
+      <div class="form-group row">
+        <label for="info" class="col-sm-2 col-form-label text-right">Additional Information:</label>
+        <div class="col-sm-10">
+          <textarea id="info" name="info" class="form-control"></textarea>
+        </div>
+      </div>
 
       <label for="haveYouBeen" class="first">Have you been to the restaurant?</label>
       <input type="radio" id="choice1" name="choice1" value="no" checked>
