@@ -9,13 +9,6 @@ p.links {
   text-align: left;
 }
 
-/*article {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 400px;
-}*/
-
 footer {
   text-align: center;
 }
@@ -23,18 +16,6 @@ footer {
 header, footer, nav {
   background: white;
 }
-
-/*nav a:visited {
-  color: #586282;
-}
-
-nav a:hover {
-  font-weight: bold;
-}
-
-nav a:active {
-  text-decoration: none;
-}*/
 
 .mm-text-shadow {
   color: white;

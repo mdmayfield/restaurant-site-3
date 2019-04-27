@@ -16,7 +16,7 @@ Created: 2019-04-25
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/restaurantStyles.css">
-    <style>
+    <!--style>
       label.first {
         display: inline-block;
         text-align: right;
@@ -39,7 +39,7 @@ Created: 2019-04-25
       label.required {
         font-weight: bold;
       }
-    </style>
+    </style-->
   </head>
   <body>
   <div class="container"> 
@@ -60,9 +60,11 @@ Created: 2019-04-25
       </ul>
     </nav>
 
-    <form action="submit.html" method="POST">
-      <label for="name" class="first required">Name:</label>
-      <input type="text" id="name" name="name" required><br />
+    <form><!--TODO: figure out validation message-->
+      <div class="form-group">
+        <label for="name" class="first required">Name:</label>
+        <input type="text" id="name" name="name" required><br />
+      </div>
 
       <label for="email" class="first required">Email:</label>
       <input type="text" id="email" name="email" required><br />
@@ -84,9 +86,9 @@ Created: 2019-04-25
       </div><br />
 
       <label for="haveYouBeen" class="first">Have you been to the restaurant?</label>
-      <input type="radio" id="choice1" name="haveYouBeen" value="no" checked>
+      <input type="radio" id="choice1" name="choice1" value="no" checked>
       <label for="choice1">No</label>
-      <input type="radio" id="choice2" name="haveYouBeen" value="yes">
+      <input type="radio" id="choice2" name="choice2" value="yes">
       <label for="choice2">Yes</label><br />
 
       <label for="contact" class="first">Best days to contact you:</label>
