@@ -22,3 +22,8 @@ header, footer, nav {
   text-shadow: 3px 3px 3px #000;
   background: rgba(0,0,0,0.5);
 }
+
+.jswarn {
+  color: white;
+  background: red;
+}

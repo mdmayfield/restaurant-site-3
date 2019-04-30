@@ -4,29 +4,42 @@ function plausibleEmail(email) {
 
 /* It seems that Bootstrap 4 has removed the has-error class and expects the
  * developer to rely on standard HTML5 form validation. Since the assignment
- * criteria specified it, I'm including some validation code here, but I don't
- * expect it to come up in typical use, since HTML5 form validation already
- * catches these same criteria. -MM
+ * criteria specified it, I'm including JS validation code here. Ordinarily
+ * I would have used input type="email" for the email input, and a "required"
+ * attribute in the name and email input elements. -MM
  */
 
 function validateForm() {
 
-  var name = document.forms["contact"]["name"].value;
-  var email = document.forms["contact"]["email"].value;
+  var name = document.forms["contact"]["name"];
+  var email = document.forms["contact"]["email"];
 
-  if (!name) {
-    console.log("NO NAME");
+  if (!name.value) {
+    name.setCustomValidity("Please enter your name.");
+    name.onchange = validateForm;
     return false;
+  } else {
+    name.setCustomValidity("");
   }
 
-  if (!plausibleEmail(email)) {
-    console.log("NO EMAIL");
+  if (!plausibleEmail(email.value)) {
+    email.setCustomValidity("Please enter a valid email address.");
+    email.onchange = validateForm;
     return false;
+  } else {
+    email.setCustomValidity("");
   }
 
-  console.log("Both required fields were filled");
-
-  window.alert("Thank you for your information! Sending to /dev/null and your ISP.");
   return true;
+
 }
 
+function submitAction() {
+
+  if (validateForm()) {
+    window.alert("Thank you for your information! Sending to /dev/null and your ISP.");
+    return true;
+  }
+
+  return false;
+}
